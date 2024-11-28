@@ -13,6 +13,7 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    pathPrefix: "/your-repo-name",
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -39,5 +40,15 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+
+    // New plugins for markdown files
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts", // This is the name of the source
+        path: `${__dirname}/src/posts/`, // Path where markdown files are located
+      },
+    },
+    "gatsby-transformer-remark", // To transform markdown files into HTML
   ],
 }
