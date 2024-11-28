@@ -4,6 +4,7 @@
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "homepage": "https://rida-mushtaq28.github.io/SSG-gitsby",
   "dependencies": {
     "gatsby": "^5.14.0",
     "gatsby-plugin-image": "^3.14.0",
@@ -15,8 +16,7 @@
     "gatsby-transformer-sharp": "^5.14.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "deploy": "gatsby build && gh-pages -d public"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "gh-pages": "^6.2.0",
@@ -33,7 +33,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "repository": {
     "type": "git",
