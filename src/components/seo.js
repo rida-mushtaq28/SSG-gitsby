@@ -1,12 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
-const Seo = ({ title, description, keywords }) => (
-  <Helmet>
-    <title>{title}</title>
-    {description && <meta name="description" content={description} />}
-    {keywords && <meta name="keywords" content={keywords} />}
-  </Helmet>
+const SEO = () => (
+ <Helmet>
+ <title>My Gatsby Site</title>
+ <meta name="description" content="This is a Gatsby site optimized for SEO" />
+ </Helmet>
 );
-
-export default Seo;
+export default SEO;
